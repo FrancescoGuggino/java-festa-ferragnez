@@ -21,11 +21,14 @@ public class CheckGuest {
 
 
             if (guestList[i].equals(nameGuest)) {
-                System.out.println("Puoi entrare!");
+                System.out.println("Puoi entrare! " + nameGuest);
             } else {
                 System.out.println("Non puoi entrare!");
             }
         }
+
+
+
         scan.close();
     }
 }
