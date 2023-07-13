@@ -17,10 +17,15 @@ public class CheckGuest {
         nameGuest = scan.nextLine();
 
         //verificare che il nome sia presente nella lista
-        for () {
+        for (int i=0; i < guestList.length; i++) {
 
 
-
+            if (guestList[i].equals(nameGuest)) {
+                System.out.println("Puoi entrare!");
+            } else {
+                System.out.println("Non puoi entrare!");
+            }
         }
+        scan.close();
     }
 }
