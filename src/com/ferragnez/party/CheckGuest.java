@@ -17,18 +17,24 @@ public class CheckGuest {
         nameGuest = scan.nextLine();
 
         //verificare che il nome sia presente nella lista
-/*
+
+        boolean checked = false;
        for (int i=0; i < guestList.length; i++) {
 
 
             if (guestList[i].equals(nameGuest)) {
-               System.out.println("Puoi entrare! " + nameGuest);
-            } else {
-                System.out.println("Non puoi entrare!");
-            }
-       }
-*/
 
+               checked = true;
+           }
+       }
+
+       if (checked) {
+                System.out.println("Puoi entrare: " + nameGuest + "!");
+            } else {
+                System.out.println("Non puoi entrare: " + nameGuest + "!");
+            }
+
+/*
         boolean checked = false;
         int i = 0;
         while (!checked && i <guestList.length) {
@@ -36,7 +42,7 @@ public class CheckGuest {
                 checked = true;
 
             }
-            break;
+            i++;
         }
 
         //stampa
@@ -46,6 +52,8 @@ public class CheckGuest {
             } else {
                 System.out.println("Non puoi entrare: " + nameGuest + "!");
             }
+
+ */
 
         scan.close();
     }
